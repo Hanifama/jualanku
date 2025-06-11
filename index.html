@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav__header">
       <div class="nav__logo">
@@ -34,7 +35,9 @@
       </button>
     </div>
   </nav>
+  <!-- End Navbar -->
 
+  <!-- Header -->
   <header id="home" class="section__home">
     <div class="header__image">
       <img src="assets/header.png" alt="header" />
@@ -65,7 +68,9 @@
       </ul>
     </div>
   </header>
+  <!-- End Header -->
 
+  <!-- Menu -->
   <section class="section__container popular__container" id="menu">
     <h2 class="section__header">Menu Favorit Kami</h2>
     <div class="popular__grid">
@@ -97,9 +102,9 @@
       </div>
     </div>
   </section>
+  <!-- End Menu -->
 
-
-
+  <!-- Kategori -->
   <section class="section__container discover__container" id="categories">
     <h2 class="section__header">Lagi Laris Banget Nih!</h2>
     <p class="section__description">
@@ -153,7 +158,9 @@
       </div>
     </div>
   </section>
+  <!-- End Kategori -->
 
+  <!-- Banner -->
   <section class="banner">
     <div class="banner__image"></div>
     <div class="banner__content">
@@ -181,7 +188,9 @@
       </div>
     </div>
   </section>
+  <!-- End Banner -->
 
+  <!-- Cara Pesan -->
   <section class="section__home" id="contact">
     <div class="subscribe__content">
       <h2 class="section__header">Cara Pesan Mudah & Praktis!</h2>
@@ -243,7 +252,9 @@
       </div>
     </div>
   </section>
+  <!-- End Cara Pesan -->
 
+  <!-- Footer -->
   <footer>
     <div class="section__container footer__container">
       <div class="footer__col">
@@ -278,7 +289,9 @@
       &copy; <span id="copyright-year"></span> Jualanku. All rights reserved.
     </div>
   </footer>
+  <!-- End Footer -->
 
+  <!-- Modal Keranjang -->
   <div class="cart-modal" id="cartModal">
     <div class="cart-content">
       <h3>Keranjang Kamu</h3>
@@ -305,34 +318,7 @@
       <button onclick="closeCart()" class="close-cart">Tutup</button>
     </div>
   </div>
-
-
-  <div class="cart-modal" id="cartModal">
-    <div class="cart-content">
-      <h3>Keranjang Kamu</h3>
-      <div id="cartItems"></div>
-
-      <div class="cart-footer" style="display: none;">
-        <strong>Total: <span id="cartTotal">Rp. 0</span></strong>
-
-        <!-- Input alamat -->
-        <textarea id="cartAddress" type="text"
-          placeholder="Alamat pengantaran (wajib lengkap) - contoh : Perumahan Ambar Tanjung Sari Residence Blok F18 RT/RW 11/04"
-          style="width: 100%; margin-top: 10px; height: 80px; padding: 5px; border-radius: 6px; resize: vertical;"></textarea>
-
-
-        <!-- Input catatan -->
-        <textarea id="cartNote"
-          placeholder="Catatan (opsional) - note: berikan penjelasan (contoh: Jus Mangga jangan pakai es)"
-          style="width: 100%; margin-top: 10px; height: 80px; padding: 5px; border-radius: 6px; resize: vertical;"></textarea>
-
-        <!-- Tombol Pesan Sekarang -->
-        <button onclick="redirectToWhatsApp()" class="checkout-btn" style="margin-top: 10px;">Pesan Sekarang</button>
-      </div>
-
-      <button onclick="closeCart()" class="close-cart">Tutup</button>
-    </div>
-  </div>
+  <!-- End Modal Keranjang -->
 
   <!-- Modal Pilihan Pembayaran -->
   <div class="payment-modal" id="paymentModal" style="display: none;">
@@ -351,15 +337,21 @@
       <button onclick="closePaymentModal()" class="cancel-btn">Kembali ke Keranjang</button>
     </div>
   </div>
+  <!-- End Modal Pilihan Pembayaran -->
 
-
+  <!-- Script Scrool -->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Script Animasi & Mobile navbar -->
   <script src="main.js"></script>
+
+  <!-- Script Footer Tahun -->
   <script>
     // ambil elemen dan isi tahun saat ini
     document.getElementById("copyright-year").textContent = new Date().getFullYear();
   </script>
 
+  <!-- Script Modal Keranjang & Pilih Pembayaran -->
   <script>
     let selectedPayment = "";
 
@@ -443,7 +435,7 @@
 
   </script>
 
-
+  <!-- Script Tambah ke Keranjang -->
   <script>
     let cart = [];
 
@@ -541,7 +533,6 @@
     // Klik icon cart buat buka modal
     document.querySelector(".nav__btns .btn").addEventListener("click", openCart);
   </script>
-
 
 </body>
 

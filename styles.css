@@ -194,6 +194,12 @@ body {
   }
 }
 
+
+
+
+
+
+
 header {
   padding-top: 5rem;
   display: grid;
@@ -260,6 +266,11 @@ header {
 .socials a:hover {
   background-color: var(--primary-color);
 }
+
+
+
+
+
 
 .popular__grid {
   margin-top: 4rem;
@@ -387,6 +398,11 @@ header {
   text-align: center;
 }
 
+
+
+
+
+
 .banner {
   display: grid;
   padding-block: 5rem;
@@ -435,6 +451,12 @@ header {
   color: var(--text-dark);
   text-align: center;
 }
+
+
+
+
+
+
 
 .subscribe__content {
   padding: 5rem 1rem;
@@ -495,7 +517,6 @@ header {
   line-height: 1.6;
 }
 
-/* Tombol Order */
 .btn__order {
   display: inline-block;
   background-color: #22c55e;
@@ -511,6 +532,12 @@ header {
 .btn__order:hover {
   background-color: #16a34a;
 }
+
+
+
+
+
+
 
 
 footer {
@@ -559,6 +586,13 @@ footer {
   color: var(--text-dark);
   text-align: center;
 }
+
+
+
+
+
+
+
 
 .cart-modal {
   position: fixed;
@@ -700,6 +734,16 @@ footer {
   border-radius: 4px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .payment-modal {
   position: fixed;
   top: 0;
@@ -807,7 +851,6 @@ footer {
 }
 
 
-/* Simple animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -830,6 +873,13 @@ footer {
   }
 }
 
+
+
+
+
+
+
+
 @media (width > 540px) {
   .popular__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -847,6 +897,13 @@ footer {
     flex-direction: row;
   }
 }
+
+
+
+
+
+
+
 
 @media (width > 768px) {
   nav {
@@ -1011,6 +1068,11 @@ footer {
     justify-content: flex-end;
   }
 }
+
+
+
+
+
 
 @media (width > 1024px) {
   .popular__grid {
