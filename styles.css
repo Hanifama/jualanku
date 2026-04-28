@@ -82,7 +82,6 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
-  padding-top: 80px;
 }
 
 .navbar {
@@ -166,7 +165,6 @@ body {
 }
 
 @media (max-width: 768px) {
- 
   .nav__btns {
     display: block;
     position: absolute;
@@ -194,14 +192,7 @@ body {
   }
 }
 
-
-
-
-
-
-
 header {
-  padding-top: 5rem;
   display: grid;
 }
 
@@ -231,7 +222,7 @@ header {
 
 .header__content h1 {
   margin-bottom: 2rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 900;
   color: var(--text-dark);
   text-align: center;
@@ -266,11 +257,6 @@ header {
 .socials a:hover {
   background-color: var(--primary-color);
 }
-
-
-
-
-
 
 .popular__grid {
   margin-top: 4rem;
@@ -369,8 +355,10 @@ header {
 }
 
 .discover__card img {
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
 }
 
 .discover__card h4 {
@@ -397,11 +385,6 @@ header {
 .discover__card__btn {
   text-align: center;
 }
-
-
-
-
-
 
 .banner {
   display: grid;
@@ -452,12 +435,6 @@ header {
   text-align: center;
 }
 
-
-
-
-
-
-
 .subscribe__content {
   padding: 5rem 1rem;
   background-color: #fde6f2;
@@ -492,7 +469,6 @@ header {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
-
 
 .step__card:hover {
   transform: translateY(-8px);
@@ -532,13 +508,6 @@ header {
 .btn__order:hover {
   background-color: #16a34a;
 }
-
-
-
-
-
-
-
 
 footer {
   background-color: var(--extra-light);
@@ -587,13 +556,6 @@ footer {
   text-align: center;
 }
 
-
-
-
-
-
-
-
 .cart-modal {
   position: fixed;
   top: 0;
@@ -616,7 +578,7 @@ footer {
   overflow-y: auto;
   border-radius: 12px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   animation: fadeInUp 0.3s ease-out;
 }
 
@@ -707,7 +669,7 @@ footer {
 .checkout-btn {
   margin-top: 12px;
   padding: 10px 16px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   border: none;
   border-radius: 6px;
@@ -733,16 +695,6 @@ footer {
   background-color: #ccc;
   border-radius: 4px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .payment-modal {
   position: fixed;
@@ -803,7 +755,9 @@ footer {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.25s, transform 0.2s;
+  transition:
+    background-color 0.25s,
+    transform 0.2s;
 }
 
 .payment-btn:hover {
@@ -850,7 +804,6 @@ footer {
   background-color: #ef4444;
 }
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -873,13 +826,6 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
 @media (width > 540px) {
   .popular__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -898,17 +844,10 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
 @media (width > 768px) {
   nav {
     position: static;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -974,7 +913,8 @@ footer {
   header {
     padding-top: 0;
     grid-template-columns:
-      minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2)) minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
+      minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2))
+      minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
     align-items: center;
   }
 
@@ -1021,13 +961,15 @@ footer {
     order: -1;
   }
 
-  .discover__card__content :is(h4, .section__description, h3, .discover__card__btn) {
+  .discover__card__content
+    :is(h4, .section__description, h3, .discover__card__btn) {
     text-align: left;
   }
 
   .banner {
     grid-template-columns:
-      minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2)) minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
+      minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2))
+      minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
     align-items: center;
   }
 
@@ -1068,11 +1010,6 @@ footer {
     justify-content: flex-end;
   }
 }
-
-
-
-
-
 
 @media (width > 1024px) {
   .popular__grid {

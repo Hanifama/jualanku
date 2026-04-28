@@ -1,274 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Jualanku | Makanan & Minuman Sehat</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Jualanku | Makanan & Minuman Sehat</title>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav__header">
-      <div class="nav__logo">
-        <a href="#" class="logo">Jualan<span>Ku</span></a>
-      </div>
-      <div class="nav__menu__btn" id="menu-btn">
-        <i class="ri-menu-3-line"></i>
-      </div>
-    </div>
-
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#home">Beranda</a></li>
-      <li><a href="#menu">Menu Kami</a></li>
-      <li><a href="#categories">Ketegori</a></li>
-      <li><a href="#contact">Info Pesan</a></li>
-    </ul>
-
-    <div class="nav__btns">
-      <button class="btn" title="Lihat Keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span id="cart-count" class="cart-badge">0</span>
-      </button>
-    </div>
-  </nav>
-  <!-- End Navbar -->
-
-  <!-- Header -->
-  <header id="home" class="section__home">
-    <div class="header__image">
-      <img src="assets/header.png" alt="header" />
-    </div>
-    <div class="header__content">
-      <h1>Sehat Itu Nikmat, <span>Yuk Coba</span>!</h1>
-      <p class="section__description">
-        Makanan dan minuman sehat nggak harus membosankan! Temukan berbagai pilihan menu yang enak, alami, dan siap
-        bikin kamu jatuh cinta dari gigitan pertama dengan minuman di tegukan pertama.
-      </p>
-      <div class="header__btn">
-        <button class="btn">Coba Sekarang</button>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Jualan<span>Ku</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
       </div>
 
-      <ul class="socials">
-        <li>
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="ri-twitter-fill"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="ri-pinterest-line"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="ri-phone-fill"></i></a>
-        </li>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#menu">Menu Kami</a></li>
+        <li><a href="#categories">Ketegori</a></li>
+        <li><a href="#contact">Info Pesan</a></li>
       </ul>
-    </div>
-  </header>
-  <!-- End Header -->
 
-  <!-- Menu -->
-  <section class="section__container popular__container" id="menu">
-    <h2 class="section__header">Menu Favorit Kami</h2>
-    <div class="popular__grid">
-      <div class="popular__card">
-        <img src="assets/popular-1.png" alt="Jus Mangga" />
-        <div class="popular__card__content">
-          <h4>Jus Mangga Segar</h4>
-          <h3>Rp. 8.000</h3>
-          <button class="add-to-cart-btn"><i class="ri-shopping-cart-2-line"></i> Masukan Keranjang</button>
-        </div>
+      <div class="nav__btns">
+        <button class="btn" title="Lihat Keranjang">
+          <i class="ri-shopping-cart-line"></i>
+          <span id="cart-count" class="cart-badge">0</span>
+        </button>
       </div>
+    </nav>
+    <!-- End Navbar -->
 
-      <div class="popular__card">
-        <img src="assets/popular-2.png" alt="Jus Melon" />
-        <div class="popular__card__content">
-          <h4>Jus Melon Dingin</h4>
-          <h3>Rp. 7.000</h3>
-          <button class="add-to-cart-btn"><i class="ri-shopping-cart-2-line"></i> Masukan Keranjang</button>
-        </div>
+    <!-- Header -->
+    <header id="home" class="section__home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
       </div>
-
-      <div class="popular__card">
-        <img src="assets/popular-3.png" alt="Jus Alpukat" />
-        <div class="popular__card__content">
-          <h4>Jus Alpukat Lembut</h4>
-          <h3>Rp. 9.000</h3>
-          <button class="add-to-cart-btn"><i class="ri-shopping-cart-2-line"></i> Masukan Keranjang</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Menu -->
-
-  <!-- Kategori -->
-  <section class="section__container discover__container" id="categories">
-    <h2 class="section__header">Lagi Laris Banget Nih!</h2>
-    <p class="section__description">
-      Yuk cobain menu favorit yang paling banyak dipesan! Mulai dari jus segar, sushi kekinian, sampai mie pedas yang
-      bikin nagih.
-    </p>
-    <div class="discover__grid">
-      <div class="discover__card">
-        <img src="assets/discover-1.png" alt="Jus Aneka Rasa" />
-        <div class="discover__card__content">
-          <h4>Aneka Jus Segar</h4>
-          <p class="section__description">
-            Pilihan jus buah segar dari mangga, melon, alpukat, dan lainnya. Cocok buat kamu yang mau hidup sehat tapi
-            tetap enak! Mulai dari Rp. 7.000 aja.
-          </p>
-          <h3>Rp. 7.000 <span><s>Rp. 10.000</s></span></h3>
-          <div class="discover__card__btn">
-            <button class="btn">Pesan Sekarang</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="discover__card">
-        <img src="assets/discover-2.png" alt="Sushi Kekinian" />
-        <div class="discover__card__content">
-          <h4>Sushi Sehat</h4>
-          <p class="section__description">
-            Sushi dengan isian segar, rendah minyak, dan nikmat banget. Pas buat kamu yang pengen makan enak tanpa rasa
-            bersalah.
-          </p>
-          <h3>Rp. 15.000 <span><s>Rp. 20.000</s></span></h3>
-          <div class="discover__card__btn">
-            <button class="btn">Pesan Sekarang</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="discover__card">
-        <img src="assets/discover-3.png" alt="Mie Jebew" />
-        <div class="discover__card__content">
-          <h4>Mie Jebew</h4>
-          <p class="section__description">
-            Siap-siap ketagihan sama mie sehat dengan bumbu pedas nendang! Cocok buat penggemar mie pedas yang tetap
-            pengen sehat.
-          </p>
-          <h3>Rp. 12.000 <span><s>Rp. 17.000</s></span></h3>
-          <div class="discover__card__btn">
-            <button class="btn">Pesan Sekarang</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Kategori -->
-
-  <!-- Banner -->
-  <section class="banner">
-    <div class="banner__image"></div>
-    <div class="banner__content">
-      <h2 class="section__header">
-        Makan & Minum Sehat Nggak Harus Mahal!
-      </h2>
-      <p class="section__description">
-        Saatnya nikmati makanan dan minuman sehat yang enak, segar, dan ramah di kantong!
-        Mulai dari jus buah alami, sushi segar, sampai mie jebew favorit — semua siap temani harimu tanpa bikin dompet
-        kering.
-      </p>
-      <div class="banner__flex">
-        <div class="banner__card">
-          <img src="assets/banner-1.png" alt="banner" />
-          <h4>Segar & Alami</h4>
-        </div>
-        <div class="banner__card">
-          <img src="assets/banner-2.png" alt="banner" />
-          <h4>Kemasan Higenis</h4>
-        </div>
-        <div class="banner__card">
-          <img src="assets/banner-3.png" alt="banner" />
-          <h4>Antar Kilat</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Banner -->
-
-  <!-- Cara Pesan -->
-  <section class="section__home" id="contact">
-    <div class="subscribe__content">
-      <h2 class="section__header">Cara Pesan Mudah & Praktis!</h2>
-      <p class="section__description">
-        Gausah ribet! Ikuti langkah mudah di bawah ini untuk melakukan pemesanan melalui WhatsApp.
-      </p>
-
-      <div class="steps__wrapper">
-        <!-- Langkah 1 -->
-        <div class="step__card">
-          <div class="step__icon">📝</div>
-          <h3 class="step__title">Pilih Menu</h3>
-          <p class="step__desc">
-            Jelajahi daftar menu kami dan tambahkan item favoritmu ke keranjang.
-          </p>
+      <div class="header__content">
+        <h1>Sehat Itu Nikmat, <span>Yuk Coba</span>!</h1>
+        <p class="section__description">
+          Makanan dan minuman sehat nggak harus membosankan! Temukan berbagai
+          pilihan menu yang enak, alami, dan siap bikin kamu jatuh cinta dari
+          gigitan pertama dengan minuman di tegukan pertama.
+        </p>
+        <div class="header__btn">
+          <button class="btn">Coba Sekarang</button>
         </div>
 
-        <!-- Langkah 2 -->
-        <div class="step__card">
-          <div class="step__icon">🛒</div>
-          <h3 class="step__title">Periksa Keranjang</h3>
-          <p class="step__desc">
-            Cek kembali pesananmu, atur jumlah, dan tambahkan catatan bila perlu.
-          </p>
-        </div>
-
-        <!-- Langkah 3 -->
-        <div class="step__card">
-          <div class="step__icon">💳</div>
-          <h3 class="step__title">Pilih Pembayaran</h3>
-          <p class="step__desc">
-            Tentukan metode pembayaran: Cash, Transfer, atau QRIS. Semuanya gampang!
-          </p>
-        </div>
-
-        <!-- Langkah 4 -->
-        <div class="step__card">
-          <div class="step__icon">📲</div>
-          <h3 class="step__title">Kirim ke WhatsApp</h3>
-          <p class="step__desc">
-            Klik tombol <strong>"Pesan Sekarang"</strong>, pesananmu langsung dikirim ke WhatsApp kami.
-          </p>
-        </div>
-
-        <!-- Langkah 5 -->
-        <div class="step__card">
-          <div class="step__icon">🚚</div>
-          <h3 class="step__title">Pesanan Diantar</h3>
-          <p class="step__desc">
-            Setelah pesanan dikonfirmasi, kami langsung antar ke tempatmu. Cepat & aman!
-          </p>
-        </div>
-      </div>
-
-      <div style="text-align: center;">
-        <a href="#menu" class="btn__order">
-          📋 Pilih Menu Sekarang
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- End Cara Pesan -->
-
-  <!-- Footer -->
-  <footer>
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <a href="#" class="logo">Jualan<span>Ku</span></a>
-      </div>
-      <div class="footer__col">
-        <ul class="footer__links">
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#menu">Menu Kami</a></li>
-          <li><a href="#categories">Kategori</a></li>
-          <li><a href="#contact">Info Pesan</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
         <ul class="socials">
           <li>
             <a href="#"><i class="ri-facebook-fill"></i></a>
@@ -284,202 +70,471 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="footer__bar">
-      &copy; <span id="copyright-year"></span> Jualanku. All rights reserved.
-    </div>
-  </footer>
-  <!-- End Footer -->
+    </header>
+    <!-- End Header -->
 
-  <!-- Modal Keranjang -->
-  <div class="cart-modal" id="cartModal">
-    <div class="cart-content">
-      <h3>Keranjang Kamu</h3>
-      <div id="cartItems"></div>
+    <!-- Menu -->
+    <section class="section__container popular__container" id="menu">
+      <h2 class="section__header">Menu Favorit Kami</h2>
+      <div class="popular__grid">
+        <div class="popular__card">
+          <img src="assets/popular-1.png" alt="Mille Crapes" />
+          <div class="popular__card__content">
+            <h4>Red Velvet</h4>
+            <h3>Rp. 20.000</h3>
+            <button class="add-to-cart-btn">
+              <i class="ri-shopping-cart-2-line"></i> Masukan Keranjang
+            </button>
+          </div>
+        </div>
 
-      <div class="cart-footer" style="display: none;">
-        <strong>Total: <span id="cartTotal">Rp. 0</span></strong>
+        <div class="popular__card">
+          <img src="assets/popular-2.png" alt="Mille Crapes" />
+          <div class="popular__card__content">
+            <h4>Tiramisu</h4>
+            <h3>Rp. 20.000</h3>
+            <button class="add-to-cart-btn">
+              <i class="ri-shopping-cart-2-line"></i> Masukan Keranjang
+            </button>
+          </div>
+        </div>
 
-        <!-- Input alamat -->
-        <textarea id="cartAddress" type="text"
-          placeholder="Alamat pengantaran (wajib lengkap) - contoh : Perumahan Ambar Tanjung Sari Residence Blok F18 RT/RW 11/04"
-          style="width: 100%; margin-top: 10px; height: 80px; padding: 5px; border-radius: 6px; resize: vertical;"></textarea>
-
-
-        <!-- Input catatan -->
-        <textarea id="cartNote"
-          placeholder="Catatan (opsional) - note: berikan penjelasan (contoh: Jus Mangga jangan pakai es)"
-          style="width: 100%; margin-top: 10px; height: 80px; padding: 5px; border-radius: 6px; resize: vertical;"></textarea>
-
-        <!-- Tombol Pesan Sekarang -->
-        <button onclick="redirectToWhatsApp()" class="checkout-btn" style="margin-top: 10px;">Pesan Sekarang</button>
+        <div class="popular__card">
+          <img src="assets/popular-3.png" alt="Mille Crapes" />
+          <div class="popular__card__content">
+            <h4>Matcha</h4>
+            <h3>Rp. 20.000</h3>
+            <button class="add-to-cart-btn">
+              <i class="ri-shopping-cart-2-line"></i> Masukan Keranjang
+            </button>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- End Menu -->
 
-      <button onclick="closeCart()" class="close-cart">Tutup</button>
-    </div>
-  </div>
-  <!-- End Modal Keranjang -->
+    <!-- Kategori -->
+    <section class="section__container discover__container" id="categories">
+      <h2 class="section__header">Lagi Laris Banget Nih!</h2>
+      <p class="section__description">
+        Yuk cobain menu favorit yang paling banyak dipesan! Mulai dari jus
+        segar, sushi kekinian, sampai mie pedas yang bikin nagih.
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <img src="assets/discover-2.png" alt="Sushi Kekinian" />
+          <div class="discover__card__content">
+            <h4>Still Coffe To Go</h4>
+            <p class="section__description">
+              Berbagai pilihan coffee kekinian dengan rasa nikmat dan aroma yang
+              menggoda. Cocok jadi teman santai, teman kerja, atau penyemangat
+              di setiap harimu. Praktis dibawa ke mana saja, siap menemani
+              setiap momenmu.
+            </p>
+            <h3>
+              Rp. 15.000 <span><s>Rp. 20.000</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Pesan Sekarang</button>
+            </div>
+          </div>
+        </div>
 
-  <!-- Modal Pilihan Pembayaran -->
-  <div class="payment-modal" id="paymentModal" style="display: none;">
-    <div class="payment-content">
-      <h3 class="payment-title">Pilih Metode Pembayaran</h3>
+        <div class="discover__card">
+          <img src="assets/discover-1.png" alt="Mille Crapes" />
+          <div class="discover__card__content">
+            <h4>Aneka Mille Crapes</h4>
+            <p class="section__description">
+              Nikmati kelembutan mille crapes dengan lapisan tipis yang lumer di
+              setiap gigitan. Tersedia dalam berbagai varian rasa favorit yang
+              manis dan menggoda. Cocok untuk teman santai, hadiah spesial, atau
+              penutup hari yang istimewa. Mulai dari Rp. 20.000 aja.
+            </p>
+            <h3>
+              Rp. 20.000 <span><s>Rp. 25.000</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Pesan Sekarang</button>
+            </div>
+          </div>
+        </div>
 
-      <div class="payment-options">
-        <button onclick="selectPayment('transfer')" class="payment-btn">Transfer Bank</button>
-        <button onclick="selectPayment('qris')" class="payment-btn">QRIS</button>
-        <button onclick="selectPayment('cash')" class="payment-btn">COD (Bayar di Tempat)</button>
+        <div class="discover__card">
+          <img src="assets/discover-3.png" alt="Mie Jebew" />
+          <div class="discover__card__content">
+            <h4>Jajanan Gokil</h4>
+            <p class="section__description">
+              Kumpulan camilan favorit dengan rasa unik, lezat, dan bikin nagih.
+              Dari yang gurih, pedas, manis, sampai kenyal—semuanya siap nemenin
+              harimu. Cocok buat teman santai, nongkrong, atau ngemil kapan aja!
+            </p>
+            <h3>
+              Rp. 10.000 <span><s>Rp. 20.000</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Pesan Sekarang</button>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- End Kategori -->
 
-      <div id="paymentInfo" class="payment-info"></div>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner__image"></div>
+      <div class="banner__content">
+        <h2 class="section__header">Makan & Minum Sehat Nggak Harus Mahal!</h2>
+        <p class="section__description">
+          Saatnya nikmati makanan dan minuman sehat yang enak, segar, dan ramah
+          di kantong! Mulai dari jus buah alami, sushi segar, sampai mie jebew
+          favorit — semua siap temani harimu tanpa bikin dompet kering.
+        </p>
+        <div class="banner__flex">
+          <div class="banner__card">
+            <img src="assets/banner-1.png" alt="banner" />
+            <h4>Segar & Alami</h4>
+          </div>
+          <div class="banner__card">
+            <img src="assets/banner-2.png" alt="banner" />
+            <h4>Kemasan Higenis</h4>
+          </div>
+          <div class="banner__card">
+            <img src="assets/banner-3.png" alt="banner" />
+            <h4>Antar Kilat</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner -->
 
-      <button onclick="confirmPayment()" class="checkout-btn">Lanjutkan Pesan</button>
-      <button onclick="closePaymentModal()" class="cancel-btn">Kembali ke Keranjang</button>
+    <!-- Cara Pesan -->
+    <section class="section__home" id="contact">
+      <div class="subscribe__content">
+        <h2 class="section__header">Cara Pesan Mudah & Praktis!</h2>
+        <p class="section__description">
+          Gausah ribet! Ikuti langkah mudah di bawah ini untuk melakukan
+          pemesanan melalui WhatsApp.
+        </p>
+
+        <div class="steps__wrapper">
+          <!-- Langkah 1 -->
+          <div class="step__card">
+            <div class="step__icon">📝</div>
+            <h3 class="step__title">Pilih Menu</h3>
+            <p class="step__desc">
+              Jelajahi daftar menu kami dan tambahkan item favoritmu ke
+              keranjang.
+            </p>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div class="step__card">
+            <div class="step__icon">🛒</div>
+            <h3 class="step__title">Periksa Keranjang</h3>
+            <p class="step__desc">
+              Cek kembali pesananmu, atur jumlah, dan tambahkan catatan bila
+              perlu.
+            </p>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div class="step__card">
+            <div class="step__icon">💳</div>
+            <h3 class="step__title">Pilih Pembayaran</h3>
+            <p class="step__desc">
+              Tentukan metode pembayaran: Cash, Transfer, atau QRIS. Semuanya
+              gampang!
+            </p>
+          </div>
+
+          <!-- Langkah 4 -->
+          <div class="step__card">
+            <div class="step__icon">📲</div>
+            <h3 class="step__title">Kirim ke WhatsApp</h3>
+            <p class="step__desc">
+              Klik tombol <strong>"Pesan Sekarang"</strong>, pesananmu langsung
+              dikirim ke WhatsApp kami.
+            </p>
+          </div>
+
+          <!-- Langkah 5 -->
+          <div class="step__card">
+            <div class="step__icon">🚚</div>
+            <h3 class="step__title">Pesanan Diantar</h3>
+            <p class="step__desc">
+              Setelah pesanan dikonfirmasi, kami langsung antar ke tempatmu.
+              Cepat & aman!
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center">
+          <a href="#menu" class="btn__order"> 📋 Pilih Menu Sekarang </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Cara Pesan -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="logo">Jualan<span>Ku</span></a>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#menu">Menu Kami</a></li>
+            <li><a href="#categories">Kategori</a></li>
+            <li><a href="#contact">Info Pesan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-phone-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        &copy; <span id="copyright-year"></span> Jualanku. All rights reserved.
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Modal Keranjang -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-content">
+        <h3>Keranjang Kamu</h3>
+        <div id="cartItems"></div>
+
+        <div class="cart-footer" style="display: none">
+          <strong>Total: <span id="cartTotal">Rp. 0</span></strong>
+
+          <!-- Input alamat -->
+          <textarea
+            id="cartAddress"
+            type="text"
+            placeholder="Alamat pengantaran (wajib lengkap) - contoh : Perumahan Ambar Tanjung Sari Residence Blok F18 RT/RW 11/04"
+            style="
+              width: 100%;
+              margin-top: 10px;
+              height: 80px;
+              padding: 5px;
+              border-radius: 6px;
+              resize: vertical;
+            "
+          ></textarea>
+
+          <!-- Input catatan -->
+          <textarea
+            id="cartNote"
+            placeholder="Catatan (opsional) - note: berikan penjelasan (contoh: Jus Mangga jangan pakai es)"
+            style="
+              width: 100%;
+              margin-top: 10px;
+              height: 80px;
+              padding: 5px;
+              border-radius: 6px;
+              resize: vertical;
+            "
+          ></textarea>
+
+          <!-- Tombol Pesan Sekarang -->
+          <button
+            onclick="redirectToWhatsApp()"
+            class="checkout-btn"
+            style="margin-top: 10px"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+
+        <button onclick="closeCart()" class="close-cart">Tutup</button>
+      </div>
     </div>
-  </div>
-  <!-- End Modal Pilihan Pembayaran -->
+    <!-- End Modal Keranjang -->
 
-  <!-- Script Scrool -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Modal Pilihan Pembayaran -->
+    <div class="payment-modal" id="paymentModal" style="display: none">
+      <div class="payment-content">
+        <h3 class="payment-title">Pilih Metode Pembayaran</h3>
 
-  <!-- Script Animasi & Mobile navbar -->
-  <script src="main.js"></script>
+        <div class="payment-options">
+          <button onclick="selectPayment('transfer')" class="payment-btn">
+            Transfer Bank
+          </button>
+          <button onclick="selectPayment('qris')" class="payment-btn">
+            QRIS
+          </button>
+          <button onclick="selectPayment('cash')" class="payment-btn">
+            COD (Bayar di Tempat)
+          </button>
+        </div>
 
-  <!-- Script Footer Tahun -->
-  <script>
-    // ambil elemen dan isi tahun saat ini
-    document.getElementById("copyright-year").textContent = new Date().getFullYear();
-  </script>
+        <div id="paymentInfo" class="payment-info"></div>
 
-  <!-- Script Modal Keranjang & Pilih Pembayaran -->
-  <script>
-    let selectedPayment = "";
+        <button onclick="confirmPayment()" class="checkout-btn">
+          Lanjutkan Pesan
+        </button>
+        <button onclick="closePaymentModal()" class="cancel-btn">
+          Kembali ke Keranjang
+        </button>
+      </div>
+    </div>
+    <!-- End Modal Pilihan Pembayaran -->
 
-    function closePaymentModal() {
-      document.getElementById("paymentModal").style.display = "none";
-    }
+    <!-- Script Scrool -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    function redirectToWhatsApp() {
-      if (cart.length === 0) return alert("Keranjang masih kosong!");
-      const address = document.getElementById("cartAddress").value.trim();
-      if (!address) return alert("Silakan isi alamat pengantaran.");
+    <!-- Script Animasi & Mobile navbar -->
+    <script src="main.js"></script>
 
-      // tampilkan modal metode pembayaran
-      document.getElementById("paymentModal").style.display = "flex";
-    }
+    <!-- Script Footer Tahun -->
+    <script>
+      // ambil elemen dan isi tahun saat ini
+      document.getElementById("copyright-year").textContent =
+        new Date().getFullYear();
+    </script>
 
-    function selectPayment(method) {
-      selectedPayment = method;
-      const info = document.getElementById("paymentInfo");
+    <!-- Script Modal Keranjang & Pilih Pembayaran -->
+    <script>
+      let selectedPayment = "";
 
-      if (method === "transfer") {
-        info.innerHTML = `
+      function closePaymentModal() {
+        document.getElementById("paymentModal").style.display = "none";
+      }
+
+      function redirectToWhatsApp() {
+        if (cart.length === 0) return alert("Keranjang masih kosong!");
+        const address = document.getElementById("cartAddress").value.trim();
+        if (!address) return alert("Silakan isi alamat pengantaran.");
+
+        // tampilkan modal metode pembayaran
+        document.getElementById("paymentModal").style.display = "flex";
+      }
+
+      function selectPayment(method) {
+        selectedPayment = method;
+        const info = document.getElementById("paymentInfo");
+
+        if (method === "transfer") {
+          info.innerHTML = `
           <strong class="text-blue-600">Transfer ke:</strong><br>
           <span class="font-medium">BCA - 1234567890 a.n. Belanjaku</span><br><br>
           <span class="text-red-600 font-semibold">⚠ Setelah melakukan transfer, harap kirim bukti transfer ke WhatsApp beserta pesanan yang dipesan untuk validasi pesanan kamu.</span>
         `;
-      } else if (method === "qris") {
-        info.innerHTML = `
+        } else if (method === "qris") {
+          info.innerHTML = `
           <strong class="text-yellow-600">QRIS:</strong><br>
           Silakan scan QR code di bawah ini:<br><br>
           <img src="assets/qr.png" alt="QRIS" class="rounded-lg mx-auto">
           <span class="text-red-600 font-semibold">⚠ Setelah melakukan transfer, harap kirim bukti transfer ke WhatsApp beserta pesanan yang dipesan untuk validasi pesanan kamu.</span>
         `;
-      } else {
-        info.innerHTML = `
+        } else {
+          info.innerHTML = `
           <strong class="text-green-600">COD Bayar di Tempat:</strong><br>
           Kamu akan membayar langsung saat pesanan diantar.
         `;
-      }
-    }
-
-    function confirmPayment() {
-      if (!selectedPayment) {
-        alert("Silakan pilih metode pembayaran terlebih dahulu.");
-        return;
+        }
       }
 
-      const address = document.getElementById("cartAddress").value.trim();
-      const catatan = document.getElementById("cartNote").value.trim();
-      const noWa = "6285864010025";
+      function confirmPayment() {
+        if (!selectedPayment) {
+          alert("Silakan pilih metode pembayaran terlebih dahulu.");
+          return;
+        }
 
-      let pesan = `*PESANAN BARU*\n\nHalo! Aku mau pesan, berikut rincian pesananku ya:\n\n`;
+        const address = document.getElementById("cartAddress").value.trim();
+        const catatan = document.getElementById("cartNote").value.trim();
+        const noWa = "6285864010025";
 
-      cart.forEach((item, index) => {
-        pesan += `${index + 1}. ${item.name}\n   Jumlah Pesan: ${item.qty}\n   Harga Satuan: Rp ${item.price.toLocaleString("id-ID")}\n   Subtotal: Rp ${(item.price * item.qty).toLocaleString("id-ID")}\n\n`;
-      });
+        let pesan = `*PESANAN BARU*\n\nHalo! Aku mau pesan, berikut rincian pesananku ya:\n\n`;
 
-      const total = cart.reduce((acc, cur) => acc + (cur.price * cur.qty), 0);
-      pesan += `*Total: Rp ${total.toLocaleString("id-ID")}*\n\n`;
-      pesan += `*Alamat Pengantaran:*\n${address}\n\n`;
+        cart.forEach((item, index) => {
+          pesan += `${index + 1}. ${item.name}\n   Jumlah Pesan: ${item.qty}\n   Harga Satuan: Rp ${item.price.toLocaleString("id-ID")}\n   Subtotal: Rp ${(item.price * item.qty).toLocaleString("id-ID")}\n\n`;
+        });
 
-      if (catatan) {
-        pesan += `*Catatan Tambahan:*\n${catatan}\n\n`;
+        const total = cart.reduce((acc, cur) => acc + cur.price * cur.qty, 0);
+        pesan += `*Total: Rp ${total.toLocaleString("id-ID")}*\n\n`;
+        pesan += `*Alamat Pengantaran:*\n${address}\n\n`;
+
+        if (catatan) {
+          pesan += `*Catatan Tambahan:*\n${catatan}\n\n`;
+        }
+
+        if (selectedPayment === "transfer") {
+          pesan += `*Metode Pembayaran:* Transfer Bank\n\n`;
+        } else if (selectedPayment === "qris") {
+          pesan += `*Metode Pembayaran:* QRIS\n\n`;
+        } else {
+          pesan += `*Metode Pembayaran:* Bayar di Tempat (Cash)\n\n`;
+        }
+
+        pesan += `\nMohon dicek dan dikonfirmasi ya. Terima kasih!`;
+
+        const url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
+        window.open(url, "_blank");
+
+        document.getElementById("paymentModal").style.display = "none";
+      }
+    </script>
+
+    <!-- Script Tambah ke Keranjang -->
+    <script>
+      let cart = [];
+
+      const cartModal = document.getElementById("cartModal");
+      const cartItemsContainer = document.getElementById("cartItems");
+      const cartTotal = document.getElementById("cartTotal");
+      const cartCountEl = document.getElementById("cart-count");
+      const cartFooter = document.querySelector(".cart-footer");
+
+      function openCart() {
+        cartModal.style.display = "flex";
+        renderCart();
       }
 
-      if (selectedPayment === "transfer") {
-        pesan += `*Metode Pembayaran:* Transfer Bank\n\n`;
-      } else if (selectedPayment === "qris") {
-        pesan += `*Metode Pembayaran:* QRIS\n\n`;
-      } else {
-        pesan += `*Metode Pembayaran:* Bayar di Tempat (Cash)\n\n`;
+      function closeCart() {
+        cartModal.style.display = "none";
       }
 
-      pesan += `\nMohon dicek dan dikonfirmasi ya. Terima kasih!`;
+      function renderCart() {
+        cartItemsContainer.innerHTML = "";
+        let total = 0;
 
-      const url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
-      window.open(url, "_blank");
-
-      document.getElementById("paymentModal").style.display = "none";
-    }
-
-  </script>
-
-  <!-- Script Tambah ke Keranjang -->
-  <script>
-    let cart = [];
-
-    const cartModal = document.getElementById("cartModal");
-    const cartItemsContainer = document.getElementById("cartItems");
-    const cartTotal = document.getElementById("cartTotal");
-    const cartCountEl = document.getElementById("cart-count");
-    const cartFooter = document.querySelector(".cart-footer");
-
-
-    function openCart() {
-      cartModal.style.display = "flex";
-      renderCart();
-    }
-
-    function closeCart() {
-      cartModal.style.display = "none";
-    }
-
-    function renderCart() {
-      cartItemsContainer.innerHTML = "";
-      let total = 0;
-
-      if (cart.length === 0) {
-        cartItemsContainer.innerHTML = `
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = `
       <div style="text-align: center; padding: 20px;">
         <i class="ri-shopping-cart-line" style="font-size: 48px; color: #aaa;"></i>
         <p style="margin-top: 10px; font-size: 16px; color: #666;">Maaf, keranjang kamu masih kosong.</p>
       </div>
     `;
-        cartFooter.style.display = "none";
-        return;
-      }
+          cartFooter.style.display = "none";
+          return;
+        }
 
-      cart.forEach((item, index) => {
-        const itemTotal = item.price * item.qty;
-        total += itemTotal;
+        cart.forEach((item, index) => {
+          const itemTotal = item.price * item.qty;
+          total += itemTotal;
 
-        cartItemsContainer.innerHTML += `
+          cartItemsContainer.innerHTML += `
       <div class="cart-item">
         <div style="flex: 1;">
           <h4 style="margin: 0 0 4px 0;">${item.name}</h4>
           <p style="margin: 0; font-size: 14px; color: #555;">Harga: Rp. ${item.price.toLocaleString("id-ID")}</p>
-          <p style="margin: 0; font-size: 14px; color: #555;">Subtotal: Rp. ${(itemTotal).toLocaleString("id-ID")}</p>
+          <p style="margin: 0; font-size: 14px; color: #555;">Subtotal: Rp. ${itemTotal.toLocaleString("id-ID")}</p>
         </div>
         <div class="qty-controls">
           <button onclick="changeQty(${index}, -1)">-</button>
@@ -489,51 +544,55 @@
         </div>
       </div>
     `;
-      });
+        });
 
-      cartTotal.textContent = "Rp. " + total.toLocaleString("id-ID");
-      cartFooter.style.display = "flex";
-    }
+        cartTotal.textContent = "Rp. " + total.toLocaleString("id-ID");
+        cartFooter.style.display = "flex";
+      }
 
-
-    function changeQty(index, delta) {
-      cart[index].qty += delta;
-      if (cart[index].qty <= 0) cart.splice(index, 1);
-      updateCart();
-    }
-
-    function removeItem(index) {
-      cart.splice(index, 1);
-      updateCart();
-    }
-
-    function updateCart() {
-      renderCart();
-      cartCountEl.textContent = cart.length;
-    }
-
-    // Tambah ke keranjang
-    document.querySelectorAll(".add-to-cart-btn").forEach((btn, idx) => {
-      btn.addEventListener("click", () => {
-        const card = btn.closest(".popular__card");
-        const name = card.querySelector("h4").textContent;
-        const price = parseInt(card.querySelector("h3").textContent.replace("Rp. ", "").replace(".", ""));
-
-        const existing = cart.find(item => item.name === name);
-        if (existing) {
-          existing.qty++;
-        } else {
-          cart.push({ name, price, qty: 1 });
-        }
-
+      function changeQty(index, delta) {
+        cart[index].qty += delta;
+        if (cart[index].qty <= 0) cart.splice(index, 1);
         updateCart();
+      }
+
+      function removeItem(index) {
+        cart.splice(index, 1);
+        updateCart();
+      }
+
+      function updateCart() {
+        renderCart();
+        cartCountEl.textContent = cart.length;
+      }
+
+      // Tambah ke keranjang
+      document.querySelectorAll(".add-to-cart-btn").forEach((btn, idx) => {
+        btn.addEventListener("click", () => {
+          const card = btn.closest(".popular__card");
+          const name = card.querySelector("h4").textContent;
+          const price = parseInt(
+            card
+              .querySelector("h3")
+              .textContent.replace("Rp. ", "")
+              .replace(".", ""),
+          );
+
+          const existing = cart.find((item) => item.name === name);
+          if (existing) {
+            existing.qty++;
+          } else {
+            cart.push({ name, price, qty: 1 });
+          }
+
+          updateCart();
+        });
       });
-    });
 
-    // Klik icon cart buat buka modal
-    document.querySelector(".nav__btns .btn").addEventListener("click", openCart);
-  </script>
-
-</body>
-
+      // Klik icon cart buat buka modal
+      document
+        .querySelector(".nav__btns .btn")
+        .addEventListener("click", openCart);
+    </script>
+  </body>
 </html>
